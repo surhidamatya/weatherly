@@ -1,5 +1,5 @@
 import 'package:weatherlyapp/models/forecast.dart';
-import 'package:weatherlyapp/services/weather_api.dart';
+import 'package:weatherlyapp/api/weather_api.dart';
 
 class ForecastService {
   final WeatherApi weatherApi;

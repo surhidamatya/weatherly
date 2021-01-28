@@ -1,6 +1,6 @@
 import 'package:weatherlyapp/models/forecast.dart';
 import 'package:weatherlyapp/models/location.dart';
-import 'package:weatherlyapp/services/weather_api.dart';
+import 'package:weatherlyapp/api/weather_api.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
