@@ -47,7 +47,7 @@ class ForecastViewModel with ChangeNotifier {
     forecastService = ForecastService(OpenWeatherMapWeatherApi());
   }
 
-  Future<Forecast> getLatestWeather(String city) async {
+  Future<Forecast> getLatestWeather(String city, BuildContext context) async {
     setRequestPendingState(true);
     isRequestError = false;
 
