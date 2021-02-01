@@ -13,6 +13,7 @@ class OpenWeatherMapWeatherApi extends WeatherApi {
     httpClient = http.Client();
   }
 
+  @override
   Future<Location> getLocation(String city) async {
     final requestUrl = '$endPointUrl/weather?q=$city&APPID=$apiKey';
     final response = await httpClient.get(Uri.encodeFull(requestUrl));
