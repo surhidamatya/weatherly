@@ -6,7 +6,7 @@ import 'package:weatherlyapp/api/openweather_api.dart';
 import 'package:weatherlyapp/models/forecast.dart';
 import 'package:weatherlyapp/models/weather.dart';
 import 'package:weatherlyapp/services/forecast_service.dart';
-import 'package:weatherlyapp/utils/temparature_conver.dart';
+import 'package:weatherlyapp/utils/temparature_converter.dart';
 
 class ForecastViewModel with ChangeNotifier {
   bool isRequestPending = false;
@@ -57,7 +57,7 @@ class ForecastViewModel with ChangeNotifier {
 
       latest = await forecastService
           .getWeather(city)
-          .catchError((onError) => isRequestError = true);
+          .catchError((onError) => isRequestError);
     } catch (e) {
       isRequestError = true;
     }

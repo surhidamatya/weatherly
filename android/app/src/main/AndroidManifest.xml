@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.devbaucha.weatherlyapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
    <application
         android:label="weatherlyapp"
         android:icon="@mipmap/ic_launcher">
